@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Query 1 Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/query1.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/#query2">Main page</a></li>
+            <li><a href="/query1">Simple Query</a></li>
+            <li><a href="/query2">Better Query Result</a></li>
+            <li><a href="/query3">Better Query 3</a></li>
+        </ul>
+    </nav>
+
+    <h1>Simple Query Result</h1>
+    <ol>
+        {% for row in rows %}
+        <li>{{ row[1] }} {{ row[3] }}</li>
+        {% endfor %}
+    </ol>
+
+</body>
+
+</html>

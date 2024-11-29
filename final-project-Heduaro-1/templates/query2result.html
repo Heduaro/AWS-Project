@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Query 2 Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/query1.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/#query2">Main page</a></li>
+            <li><a href="/query1">Simple Query</a></li>
+            <li><a href="/query2">Better Query Result</a></li>
+            <li><a href="/query3">Better Query 3</a></li>
+        </ul>
+    </nav>
+
+    <h1>Better Query Result</h1>
+    <table>
+        <tr>
+            <td>Product Name</td>
+            <td>Product Number</td>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row.Name }}</td>
+            <td>{{ row.ProductNumber }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+
+</html>

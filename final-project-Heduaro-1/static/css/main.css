@@ -1,0 +1,77 @@
+/* query1.css */
+
+/* Reset default margin and padding */
+body, h1, ol, li, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('img/bg.jpg'); /* Set background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background attachment */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Center the content horizontally */
+body {
+    background-color: #f0f0f0; /* Set background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background-color: #333; /* Set background color */
+    padding: 10px 0; /* Add padding */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px; /* Set font size */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px; /* Adjust margin as needed */
+    text-align: center; /* Center align content */
+}
+
+.available-samples {
+    text-align: center;
+}
+
+/* Remove numbers from the ordered list */
+ol {
+    list-style: none;
+}
+
+/* Align list items to the left and move them to the right */
+ol li {
+    text-align: left;
+    margin-left: 0; /* Reset margin */
+    padding-left: 200px; /* Add padding for better appearance */
+    font-weight: bold; /* Set font weight to bold */
+}

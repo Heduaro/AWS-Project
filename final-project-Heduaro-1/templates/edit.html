@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Edit address</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/query1.css') }}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/#query2">Main page</a></li>
+            <li><a href="/query1">Simple Query</a></li>
+            <li><a href="/query2">Better Query Result</a></li>
+            <li><a href="/query3">Better Query 3</a></li>
+        </ul>
+    </nav>
+
+    <h1>Edit address</h1>
+    <form action="/edit/{{ row.AddressID }}" method=POST>
+        <p><input type="text" name="addressline1" value="{{ row.AddressLine1 }}" /></p>
+        <p><input type="text" name="city" value="{{ row.City }}" /></p>
+        <p><input type="submit" value="Update" /></p>
+    </form>
+</body>
+
+</html>
